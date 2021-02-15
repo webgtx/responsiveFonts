@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="about">
+      <h1 class="about__title">Responsive fonts</h1>
+      <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae vero molestias consectetur facere asperiores, quos optio non et iure quasi in officiis nesciunt, saepe ea ut tenetur neque soluta!</p>
+    </div>
+    <div class="shop">
+      <div class="shop__items">
+        <div class="shop__item">
+          <h2>First method</h2>
+          <p class="item-info">calc(min-font + (min-font - max-font) / (100vw / 1280));</p>
+        </div>
+      </div>
+      <div class="shop__items">
+        <div class="shop__item">
+          <h2>Correct method with <span>@media</span></h2>
+          <p class="item-info">calc(24 + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));</p>
+        </div>
+      </div>
+      <div class="shop__items">
+        <div class="shop__item">
+          <p class="item-info">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src='script.js'></script>
+</body>
+</html>
